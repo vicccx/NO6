@@ -1,32 +1,22 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8">
-<meta http-equiv="refresh" content="30">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NO.6</title>
+<html><head><meta charset="UTF-8"><meta http-equiv="refresh" content="30"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>NO.6 COMMAND</title>
 <style>
-    body { background:#000; color:#fff; font-family: -apple-system, system-ui; padding:20px; max-width:400px; margin:auto; }
-    .price { font-size:64px; font-weight:900; text-align:center; margin:30px 0; color:#0a84ff; letter-spacing:-2px; }
-    .status-bar { text-align:center; padding:15px; border-radius:12px; background:#333; color:#fff; font-weight:bold; margin-bottom:30px; font-size:24px; }
-    .timestamp { color:#444; font-size:12px; text-align:center; margin-top:40px; }
+    body { background:#000; color:#fff; font-family:system-ui; margin:0; padding:10px; height:100vh; overflow:hidden; display:flex; flex-direction:column; }
+    .header { text-align:center; flex:0; }
+    .price { font-size:42px; font-weight:900; color:#0a84ff; margin:5px 0; }
+    .grid { display:grid; grid-template-columns: 1fr 1fr 1fr; gap:10px; flex:1; align-items:center; }
+    .col { text-align:center; background:#111; border-radius:15px; padding:10px 0; height:90%; display:flex; flex-direction:column; justify-content:space-around; }
+    .label { font-size:12px; font-weight:bold; color:#666; margin-bottom:5px; }
+    .footer { font-size:10px; color:#333; text-align:center; padding:5px; }
 </style></head><body>
-    <div class="status-bar">SCANNING</div>
-    <div class="price">$84.4000</div>
-    <div style="display:flex; flex-direction:column;">
-            <div style="background:#1c1c1e; padding:20px; border-radius:15px; margin:15px 0; display:flex; justify-content:center; align-items:center; border: 1px solid #333;">
-                <span style="background:#e74c3c; color:#000; width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:32px; box-shadow: 0 0 20px #e74c3c66;">1</span>
-            </div>
-            <div style="background:#1c1c1e; padding:20px; border-radius:15px; margin:15px 0; display:flex; justify-content:center; align-items:center; border: 1px solid #333;">
-                <span style="background:#e74c3c; color:#000; width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:32px; box-shadow: 0 0 20px #e74c3c66;">2</span>
-            </div>
-            <div style="background:#1c1c1e; padding:20px; border-radius:15px; margin:15px 0; display:flex; justify-content:center; align-items:center; border: 1px solid #333;">
-                <span style="background:#e74c3c; color:#000; width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:32px; box-shadow: 0 0 20px #e74c3c66;">3</span>
-            </div>
-            <div style="background:#1c1c1e; padding:20px; border-radius:15px; margin:15px 0; display:flex; justify-content:center; align-items:center; border: 1px solid #333;">
-                <span style="background:#e74c3c; color:#000; width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:32px; box-shadow: 0 0 20px #e74c3c66;">4</span>
-            </div>
-            <div style="background:#1c1c1e; padding:20px; border-radius:15px; margin:15px 0; display:flex; justify-content:center; align-items:center; border: 1px solid #333;">
-                <span style="background:#2ecc71; color:#000; width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:32px; box-shadow: 0 0 20px #2ecc7166;">5</span>
-            </div></div>
-    <div class="timestamp">2026-03-07 15:06:50</div>
+    <div class="header">
+        <div class="price">$84.4400</div>
+    </div>
+    <div class="grid">
+        <div class="col"><div class="label">ENTRY</div><div style="background:#300; width:45px; height:45px; border-radius:50%; margin:10px auto; display:flex; align-items:center; justify-content:center; font-weight:900; color:#000; font-size:18px; box-shadow:inset 0 0 10px rgba(0,0,0,0.3);">1</div><div style="background:#300; width:45px; height:45px; border-radius:50%; margin:10px auto; display:flex; align-items:center; justify-content:center; font-weight:900; color:#000; font-size:18px; box-shadow:inset 0 0 10px rgba(0,0,0,0.3);">2</div><div style="background:#2ecc71; width:45px; height:45px; border-radius:50%; margin:10px auto; display:flex; align-items:center; justify-content:center; font-weight:900; color:#000; font-size:18px; box-shadow:inset 0 0 10px rgba(0,0,0,0.3);">3</div><div style="background:#300; width:45px; height:45px; border-radius:50%; margin:10px auto; display:flex; align-items:center; justify-content:center; font-weight:900; color:#000; font-size:18px; box-shadow:inset 0 0 10px rgba(0,0,0,0.3);">4</div><div style="background:#300; width:45px; height:45px; border-radius:50%; margin:10px auto; display:flex; align-items:center; justify-content:center; font-weight:900; color:#000; font-size:18px; box-shadow:inset 0 0 10px rgba(0,0,0,0.3);">5</div></div>
+        <div class="col"><div class="label">EXIT</div><div style="background:#202; width:45px; height:45px; border-radius:50%; margin:10px auto; display:flex; align-items:center; justify-content:center; font-weight:900; color:#000; font-size:18px; box-shadow:inset 0 0 10px rgba(0,0,0,0.3);">1</div><div style="background:#202; width:45px; height:45px; border-radius:50%; margin:10px auto; display:flex; align-items:center; justify-content:center; font-weight:900; color:#000; font-size:18px; box-shadow:inset 0 0 10px rgba(0,0,0,0.3);">2</div><div style="background:#202; width:45px; height:45px; border-radius:50%; margin:10px auto; display:flex; align-items:center; justify-content:center; font-weight:900; color:#000; font-size:18px; box-shadow:inset 0 0 10px rgba(0,0,0,0.3);">3</div><div style="background:#202; width:45px; height:45px; border-radius:50%; margin:10px auto; display:flex; align-items:center; justify-content:center; font-weight:900; color:#000; font-size:18px; box-shadow:inset 0 0 10px rgba(0,0,0,0.3);">4</div></div>
+        <div class="col"><div class="label">PROFIT</div><div style="background:#222; width:45px; height:45px; border-radius:50%; margin:10px auto; display:flex; align-items:center; justify-content:center; font-weight:900; color:#000; font-size:18px; box-shadow:inset 0 0 10px rgba(0,0,0,0.3);">1</div><div style="background:#222; width:45px; height:45px; border-radius:50%; margin:10px auto; display:flex; align-items:center; justify-content:center; font-weight:900; color:#000; font-size:18px; box-shadow:inset 0 0 10px rgba(0,0,0,0.3);">2</div><div style="background:#f1c40f; width:45px; height:45px; border-radius:50%; margin:10px auto; display:flex; align-items:center; justify-content:center; font-weight:900; color:#000; font-size:18px; box-shadow:inset 0 0 10px rgba(0,0,0,0.3);">3</div></div>
+    </div>
+    <div class="footer">NO.6 STRATEGY • 16:01:02</div>
 </body></html>
